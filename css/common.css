@@ -1,0 +1,84 @@
+/*css 初始化  begin */
+html,body,h1,h2,h3,h4,h5,h6,p,img,input,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+a,button,input,textarea{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{
+	border:0px;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-family: 'Microsoft Yahei';
+	/*background-color: #fff;*/
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:before,.clearfix:after{
+	content: "";
+	height: 0px;
+	line-height:0px;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.colorred{
+	color: red;
+}
+/*css 初始化  end */
+.color{
+	color: #3F8745!important;
+}
+.bgcgreen{
+	background-color:#3F8745!important;
+}
+/*相同类的字体*/
+.ffamily{
+	font-family: 'MS Gothic';
+}
+.coloryellow{
+	color: #F09800!important;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+	white-space: pre;
+}
+input::-webkit-input-placeholder{
+	font-size: 0.9rem;
+	color: #BAB9B9;
+}
+/*横屏时的提示信息*/
+#orientation_p{
+	width: 18rem;
+	padding:0.5rem 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	margin-left: -11rem;
+	background-color: rgba(20,4,4,1);
+	color: #fff;
+	z-index: 100000;
+}

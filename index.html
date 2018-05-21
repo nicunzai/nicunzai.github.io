@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
     <style>
-        body{
+        body,html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .all_container{
+            width: 100%;
+            height: 100%;
             background-image: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%);
+            position: relative;        
+        }
+        .particles_dv{
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .ctn_dv{
+            z-index: 2;
+        }
+        h1{
+            font-size: 42px;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            padding-top: 50px;
         }
     </style>
 </head>
 <body>
-        <div id="particles-js"></div>
+    <div class="all_container">
+        <div class="particles_dv" id="particles-js"></div>
+        <div class="ctn_dv">
+            <h1>H5工程师--陈明明</h1>            
+        </div>
+    </div>
 
         <script src="./asset/particles.js"></script>
 
@@ -21,7 +53,7 @@
             {
                 "particles": {
                 "number": {
-                    "value": 60,
+                    "value": 30,
                     "density": {
                     "enable": true,
                     "value_area": 800
